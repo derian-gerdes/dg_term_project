@@ -5,4 +5,6 @@ direction = direction + random_range(-4, 4);
 speed = 16;
 image_angle = direction;
 
+atk = 3;
+
 

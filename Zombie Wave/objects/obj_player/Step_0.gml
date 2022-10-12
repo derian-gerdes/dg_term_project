@@ -1,3 +1,8 @@
+if (hp <= 0) 
+{
+	instance_destroy();
+}
+
 //Player Direction
 
 image_angle = point_direction(x, y, mouse_x, mouse_y);
