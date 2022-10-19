@@ -1,3 +1,5 @@
+
+//If player dies, restart game
 if (hp <= 0) 
 {
 	game_restart();

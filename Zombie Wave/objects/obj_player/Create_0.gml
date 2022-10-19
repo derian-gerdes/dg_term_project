@@ -7,3 +7,4 @@ yspd = 0;
 cooldown = 0;
 
 hp = 30;
+hpCooldown = 0;

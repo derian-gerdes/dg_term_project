@@ -19,6 +19,7 @@ for (var i = 0; i < 6; i++) //6 is total amount of zombie1 objects to be spawned
 }
 
 //wave 1
+//zombie1 loop
 for (var i = 0; i < 12; i++)
 {	
 	var wDelay = 100;

@@ -5,20 +5,40 @@ var cw = camera_get_view_width(view_camera[0]);
 
 draw_set_font(fnt_points);
 draw_set_colour(c_white);
+
+//Draw coins
 draw_text(cx + (cw /2 ) - 50, cy + 25, "Coins");
 draw_text(cx + (cw / 2) - 50, cy + 65, string(thepoints));
+
+//Draw hp
 if (instance_exists(obj_player))
 {
 	draw_text(cx + 25, cy + 25, "Hp");
 	draw_text(cx + 25, cy + 65, string(obj_player.hp));
 }
 
+//Draw current wave
 if (instance_exists(obj_spawner)) 
 {
 	var waveT = string(obj_spawner.current_wave + 1);
 	draw_text(cx + cw - 203, cy + 25, "Wave: " + waveT);
 }
 
+//If no zombies remaining
+if (instance_exists(obj_spawner))
+{
+	if (obj_spawner.triggered)
+	{
+		if (obj_spawner.remaining[obj_spawner.current_wave] == 0)
+		{
+			var tim = obj_spawner.waveCooldown;
+			tim = round(tim / 60);
+			draw_text(cx + cw - 300, cy + 65, "Cooldown: " + string(tim));
+		}
+	}
+}
+
+//Draw zombies remaining
 if (instance_exists(obj_zombie4)) 
 {
 	var num = instance_number(obj_zombie4) + instance_number(obj_zombie3)

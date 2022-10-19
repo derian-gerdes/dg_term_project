@@ -23,8 +23,16 @@ if (triggered)
 		}
 		else 
 		{
-			current_wave++;
-			timer = 0;
+			if (waveCooldown > 0)
+			{
+				waveCooldown --;
+			}
+			else if (waveCooldown <= 0)
+			{
+				current_wave++;
+				timer = 0;
+				waveCooldown = room_speed * 60;
+			}
 		}
 	}
 }
