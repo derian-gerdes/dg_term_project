@@ -26,6 +26,9 @@ if (triggered)
 			if (waveCooldown > 0)
 			{
 				waveCooldown --;
+				if (keyboard_check_released(vk_space)) {
+					waveCooldown = 0;
+				}
 			}
 			else if (waveCooldown <= 0)
 			{

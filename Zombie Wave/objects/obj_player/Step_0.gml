@@ -1,4 +1,14 @@
+cooldownVal = global.cooldownUPG[global.cFR];
+moveSpeed = global.movSpdUPG[global.cmovS];
 
+if (global.change == true) {
+	hp = global.hpUPG[global.cHp];
+	global.change = false;
+}
+
+
+
+var newMoveSpeed = moveSpeed * (moveSpeed / 2);
 //If player dies, restart game
 if (hp <= 0) 
 {
@@ -22,7 +32,7 @@ xspd = (right - left) * moveSpeed;
 yspd = (down - up) * moveSpeed;
 
 if ((right and up) or (left and up) or (right and down) or (left and down)) {
-	XmoveSpeed = sqrt(moveSpeed*2);
+	XmoveSpeed = sqrt(newMoveSpeed);
 	xspd = ((right - left) * XmoveSpeed);
 	yspd = ((down - up) * XmoveSpeed);
 
@@ -65,8 +75,8 @@ y += yspd;
 
 if (mouse_check_button(mb_left) && cooldown < 1) {
 
-	instance_create_layer(x, y, "bullet_layer", obj_bullet1);
-	cooldown = 12;
+	instance_create_layer(x, y, "bullet_layer", global.atkUPG[global.cAtk]);
+	cooldown = cooldownVal;
 
 }
 

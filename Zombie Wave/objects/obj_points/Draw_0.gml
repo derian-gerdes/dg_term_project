@@ -34,6 +34,7 @@ if (instance_exists(obj_spawner))
 			var tim = obj_spawner.waveCooldown;
 			tim = round(tim / 60);
 			draw_text(cx + cw - 300, cy + 65, "Cooldown: " + string(tim));
+			draw_text(cx + cw - 510, cy + 105, "Press Space for Next Wave");
 		}
 	}
 }
