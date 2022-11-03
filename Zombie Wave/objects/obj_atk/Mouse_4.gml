@@ -7,11 +7,11 @@ if (obj_points.thepoints < global.cost[global.cAtk]) {
 else if (obj_points.thepoints >= global.cost[global.cAtk]) {
 	//upgrade atk
 	if (global.cAtk < 3) {
-		//if not already upgraded twice UNCOMMENT BELOW WHEN BULLETS ARE DONE
-		//global.cAtk += 1;
-		//obj_points.thepoints -= global.cost[global.cAtk];
-	//}
-	//else if (global.cAtk == 2) {
-		//draw = false;
+		//if not already upgraded twice 
+		global.cAtk += 1;
+		obj_points.thepoints -= global.cost[global.cAtk];
+		if (global.cAtk == 3) {
+			draw = false;
+		}
 	}
 }

@@ -4,7 +4,7 @@
 global.hpUPG = [30, 35, 40, 60];
 global.cooldownUPG = [12, 10, 8, 5];
 global.movSpdUPG = [4, 5, 6, 7];
-global.atkUPG = [obj_bullet1];
+global.atkUPG = [obj_bullet1, obj_bullet2, obj_bullet3, obj_bullet4];
 
 global.cHp = 0;
 global.cAtk = 0;

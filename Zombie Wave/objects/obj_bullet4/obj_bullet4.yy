@@ -1,0 +1,41 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_bullet4",
+  "spriteId": {
+    "name": "spr_bullet4",
+    "path": "sprites/spr_bullet4/spr_bullet4.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_bulletPar",
+    "path": "objects/obj_bulletPar/obj_bulletPar.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_zombie1","path":"objects/obj_zombie1/obj_zombie1.yy",},},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"atk","path":"objects/obj_bulletPar/obj_bulletPar.yy",},"objectId":{"name":"obj_bulletPar","path":"objects/obj_bulletPar/obj_bulletPar.yy",},"value":"10",},
+  ],
+  "parent": {
+    "name": "Bullets",
+    "path": "folders/Objects/Bullets.yy",
+  },
+}

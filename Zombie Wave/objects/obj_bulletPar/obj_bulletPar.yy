@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet1",
-  "spriteId": {
-    "name": "spr_bullet1",
-    "path": "sprites/spr_bullet1/spr_bullet1.yy",
-  },
+  "name": "obj_bulletPar",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_bulletPar",
-    "path": "objects/obj_bulletPar/obj_bulletPar.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -36,10 +30,10 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_woodWall","path":"objects/obj_woodWall/obj_woodWall.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_zombie1","path":"objects/obj_zombie1/obj_zombie1.yy",},},
   ],
-  "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"atk","path":"objects/obj_bulletPar/obj_bulletPar.yy",},"objectId":{"name":"obj_bulletPar","path":"objects/obj_bulletPar/obj_bulletPar.yy",},"value":"3",},
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"atk","varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Bullets",
     "path": "folders/Objects/Bullets.yy",
