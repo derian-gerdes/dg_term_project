@@ -8,7 +8,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemyPar",
+    "path": "objects/obj_enemyPar/obj_enemyPar.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,7 +26,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"amount","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"40",},
+  ],
   "parent": {
     "name": "Enemy",
     "path": "folders/Objects/Enemy.yy",

@@ -8,6 +8,8 @@ if (enDamageCooldown == 0)
 			enDamageCooldown = 30;
 			obj_player.hpCooldown = 60;
 			enMovCooldown = 30;
+			audio_sound_pitch(sn_playerDamage, 1);
+			audio_play_sound(sn_playerDamage, 6, 0);
 	}
 }
 

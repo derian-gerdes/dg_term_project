@@ -7,8 +7,8 @@ else if (obj_points.thepoints >= global.cost[global.cHp]) {
 	//upgrade atk
 	if (global.cHp < 3) {
 		//if not already upgraded twice
-		global.cHp += 1;
 		obj_points.thepoints -= global.cost[global.cHp];
+		global.cHp += 1;
 		global.change = true;
 		
 		if (global.cHp == 3) {

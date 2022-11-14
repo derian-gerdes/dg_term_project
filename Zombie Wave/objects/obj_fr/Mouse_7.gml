@@ -8,8 +8,8 @@ else if (obj_points.thepoints >= global.cost[global.cFR]) {
 	//upgrade atk
 	if (global.cFR < 3) {
 		//if not already upgraded twice
-		global.cFR += 1;
 		obj_points.thepoints -= global.cost[global.cFR];
+		global.cFR += 1;
 		if (global.cFR == 3) {
 			draw = false;
 		}

@@ -23,4 +23,6 @@ moveSpeed = global.movSpdUPG[global.cmovS];
 hp = global.hpUPG[global.cHp];
 hpCooldown = 0;
 
+walkCooldown = 0;
+
 

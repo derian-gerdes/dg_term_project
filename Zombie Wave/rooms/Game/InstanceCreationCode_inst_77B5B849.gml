@@ -35,6 +35,38 @@ for (var i = 0; i < 12; i++)
 	wDelay += 100;
 }
 
+//wave 2
+//zombie1 loop
+for (var i = 0; i < 12; i++)
+{	
+	var wDelay = 100;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[2,obj_zombie1,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[2,obj_zombie1,1,wDelay]);
+	}
+	
+	wDelay += 100;
+}
+//zombie2 loop
+for (var i = 0; i < 4; i++)
+{	
+	var wDelay = 100;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[2,obj_zombie2,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[2,obj_zombie2,1,wDelay]);
+	}
+	
+	wDelay += 100;
+}
+
 
 spawn[0,0] = obj_spawner.x;
 spawn[0,1] = obj_spawner.y;

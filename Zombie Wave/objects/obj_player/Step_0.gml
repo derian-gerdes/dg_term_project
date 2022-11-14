@@ -18,7 +18,7 @@ if (hp <= 0)
 
 //Player Direction
 
-image_angle = point_direction(x, y, mouse_x, mouse_y);
+//image_angle = point_direction(x, y, mouse_x, mouse_y);
 
 //Keys
 
@@ -30,6 +30,26 @@ var down = keyboard_check(ord("S"));
 //Movement
 xspd = (right - left) * moveSpeed;
 yspd = (down - up) * moveSpeed;
+
+if (right or left or up or down) {
+	if (walkCooldown <= 0) {
+		audio_sound_gain(sn_walk, 25, 0);
+		audio_sound_pitch(sn_walk, 1.5);
+		audio_play_sound(sn_walk, 2, 0);
+		if (global.cmovS == 0) {
+			walkCooldown = 30;
+		}
+		else if (global.cmovS == 1) {
+			walkCooldown = 25;
+		}
+		else if (global.cmovS == 2) {
+			walkCooldown = 20;
+		}
+		else if (global.cmovS == 3) {
+			walkCooldown = 15;
+		}
+	}
+}
 
 if ((right and up) or (left and up) or (right and down) or (left and down)) {
 	XmoveSpeed = sqrt(newMoveSpeed);
@@ -76,8 +96,26 @@ y += yspd;
 if (mouse_check_button(mb_left) && cooldown < 1) {
 
 	instance_create_layer(x, y, "bullet_layer", global.atkUPG[global.cAtk]);
+	if (global.cAtk == 0) {
+		audio_sound_pitch(sn_shoot, 0.8);
+		audio_sound_gain(sn_shoot, 0.3, 1);
+	}
+	else if (global.cAtk == 1) {
+		audio_sound_pitch(sn_shoot, 1.2);
+		audio_sound_gain(sn_shoot, .4, 1);
+	}
+	else if (global.cAtk == 2) {
+		audio_sound_pitch(sn_shoot, 1.6);
+		audio_sound_gain(sn_shoot, .5, 1);
+	}
+	else if (global.cAtk == 3) {
+		audio_sound_pitch(sn_shoot, 2);
+		audio_sound_gain(sn_shoot, .6 , 1);
+	}
+	audio_play_sound(sn_shoot,5,0);
 	cooldown = cooldownVal;
 
 }
 
 cooldown -= 1;
+walkCooldown -= 1;

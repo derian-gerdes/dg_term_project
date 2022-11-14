@@ -8,8 +8,8 @@ else if (obj_points.thepoints >= global.cost[global.cmovS]) {
 	//upgrade atk
 	if (global.cmovS < 3) {
 		//if not already upgraded twice
-		global.cmovS += 1;
 		obj_points.thepoints -= global.cost[global.cmovS];
+		global.cmovS += 1;
 		if (global.cmovS == 3) {
 			draw = false;
 		}
