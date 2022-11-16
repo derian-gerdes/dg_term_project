@@ -1,11 +1,14 @@
 waves = ds_list_create();
 //[wave #, which zombie, spawnpoint, delay]
 
+var wDelay = 0;
+
 // wave 0
 //zombie1 loop
+wDelay = 0;
 for (var i = 0; i < 6; i++) //6 is total amount of zombie1 objects to be spawned
 {	
-	var wDelay = 100;
+	wDelay += 50;
 	if (i%2 == 0)
 	{
 		ds_list_add(waves,[0,obj_zombie1,0,wDelay]);
@@ -14,15 +17,14 @@ for (var i = 0; i < 6; i++) //6 is total amount of zombie1 objects to be spawned
 	{
 		ds_list_add(waves,[0,obj_zombie1,1,wDelay]);
 	}
-	
-	wDelay += 100;
 }
 
 //wave 1
 //zombie1 loop
+wDelay = 0;
 for (var i = 0; i < 12; i++)
 {	
-	var wDelay = 100;
+	wDelay += 50;
 	if (i%2 == 0)
 	{
 		ds_list_add(waves,[1,obj_zombie1,0,wDelay]);
@@ -32,14 +34,14 @@ for (var i = 0; i < 12; i++)
 		ds_list_add(waves,[1,obj_zombie1,1,wDelay]);
 	}
 	
-	wDelay += 100;
 }
 
 //wave 2
 //zombie1 loop
-for (var i = 0; i < 12; i++)
+wDelay = 0;
+for (var i = 0; i < 18; i++)
 {	
-	var wDelay = 100;
+	wDelay += 50;
 	if (i%2 == 0)
 	{
 		ds_list_add(waves,[2,obj_zombie1,0,wDelay]);
@@ -49,26 +51,187 @@ for (var i = 0; i < 12; i++)
 		ds_list_add(waves,[2,obj_zombie1,1,wDelay]);
 	}
 	
-	wDelay += 100;
 }
-//zombie2 loop
-for (var i = 0; i < 4; i++)
+
+//wave 3
+//zombie1 loop
+wDelay = 0;
+for (var i = 0; i < 24; i++)
 {	
-	var wDelay = 100;
+	wDelay += 50;
 	if (i%2 == 0)
 	{
-		ds_list_add(waves,[2,obj_zombie2,0,wDelay]);
+		ds_list_add(waves,[3,obj_zombie1,0,wDelay]);
 	}
 	else if (i%2 == 1)
 	{
-		ds_list_add(waves,[2,obj_zombie2,1,wDelay]);
+		ds_list_add(waves,[3,obj_zombie1,1,wDelay]);
 	}
 	
-	wDelay += 100;
+}
+
+//wave 4
+//zombie1 loop
+wDelay = 0;
+for (var i = 0; i < 6; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[4,obj_zombie1,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[4,obj_zombie1,1,wDelay]);
+	}
+	
+}
+//zombie2 loop
+wDelay = 0;
+for (var i = 0; i < 4; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[4,obj_zombie2,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[4,obj_zombie2,1,wDelay]);
+	}
+	
+}
+
+//wave 5
+//zombie1 loop
+wDelay = 0;
+for (var i = 0; i < 12; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[5,obj_zombie1,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[5,obj_zombie1,1,wDelay]);
+	}
+	
+}
+//zombie2 loop
+wDelay = 0;
+for (var i = 0; i < 6; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[5,obj_zombie2,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[5,obj_zombie2,1,wDelay]);
+	}
+	
+}
+
+//wave 6
+//zombie1 loop
+wDelay = 0;
+for (var i = 0; i < 18; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[6,obj_zombie1,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[6,obj_zombie1,1,wDelay]);
+	}
+	
+}
+//zombie2 loop
+wDelay = 0;
+for (var i = 0; i < 8; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[6,obj_zombie2,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[6,obj_zombie2,1,wDelay]);
+	}
+	
+}
+
+//wave 7
+//zombie1 loop
+wDelay = 0;
+for (var i = 0; i < 24; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[7,obj_zombie1,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[7,obj_zombie1,1,wDelay]);
+	}
+	
+}
+//zombie2 loop
+wDelay = 0;
+for (var i = 0; i < 10; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[7,obj_zombie2,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[7,obj_zombie2,1,wDelay]);
+	}
+	
+}
+
+//wave 8
+//zombie1 loop
+wDelay = 0;
+for (var i = 0; i < 28; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[8,obj_zombie1,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[8,obj_zombie1,1,wDelay]);
+	}
+	
+}
+//zombie2 loop
+wDelay = 0;
+for (var i = 0; i < 12; i++)
+{	
+	wDelay += 50;
+	if (i%2 == 0)
+	{
+		ds_list_add(waves,[8,obj_zombie2,0,wDelay]);
+	}
+	else if (i%2 == 1)
+	{
+		ds_list_add(waves,[8,obj_zombie2,1,wDelay]);
+	}
+	
 }
 
 
 spawn[0,0] = obj_spawner.x;
 spawn[0,1] = obj_spawner.y;
-spawn[1,0] = obj_spawner.x;
+spawn[1,0] = obj_spawner.x - 1260;
 spawn[1,1] = obj_spawner.y + 445;

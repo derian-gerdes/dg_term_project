@@ -24,10 +24,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"amount","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"40",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"50",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spd","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"atk","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"10",},
   ],
   "parent": {
     "name": "Enemy",

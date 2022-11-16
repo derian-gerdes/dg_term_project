@@ -6,4 +6,5 @@ check2 = 0;
 check3 = 0;
 check4 = 0;
 
+global.nextZom = 0;
 
