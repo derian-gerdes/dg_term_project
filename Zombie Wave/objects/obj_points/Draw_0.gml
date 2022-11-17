@@ -2,7 +2,6 @@
 var cx = camera_get_view_x(view_camera[0]);
 var cy = camera_get_view_y(view_camera[0]);
 var cw = camera_get_view_width(view_camera[0]);
-var ch = camera_get_view_height(view_camera[0]);
 
 draw_set_font(fnt_points);
 draw_set_colour(c_white);
@@ -66,7 +65,8 @@ else if (instance_exists(obj_zombie1))
 
 //Draw beginning text
 if (!instance_exists(obj_zombie1) && obj_spawner.current_wave == 0) {
-	draw_text(cx + 360, cy + 210, "Move to dark square to begin game");
-	draw_text(cx + 380, cy + 260, "Press U key for the upgrade shop");
+	draw_text(cx + 370, cy + 190, "Use WASD to move, Click to shoot");
+	draw_text(cx + 360, cy + 240, "Move to dark square to begin game");
+	draw_text(cx + 380, cy + 300, "Press U key for the upgrade shop");
 }
 
