@@ -64,9 +64,13 @@ else if (instance_exists(obj_zombie1))
 }
 
 //Draw beginning text
-if (!instance_exists(obj_zombie1) && obj_spawner.current_wave == 0) {
+if (!instance_exists(obj_zombie1) && global.count == 0) {
 	draw_text(cx + 370, cy + 190, "Use WASD to move, Click to shoot");
 	draw_text(cx + 360, cy + 240, "Move to dark square to begin game");
 	draw_text(cx + 380, cy + 300, "Press U key for the upgrade shop");
+}
+
+if (instance_exists(obj_zombie1) && global.count < 1) {
+	global.count = 1;
 }
 
