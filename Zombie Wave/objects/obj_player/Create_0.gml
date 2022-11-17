@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.hpUPG = [30, 35, 40, 60];
+global.hpUPG = [30, 40, 50, 65];
 global.cooldownUPG = [12, 10, 8, 5];
-global.movSpdUPG = [4, 5, 6, 7];
+global.movSpdUPG = [4, 5, 6, 8];
 global.atkUPG = [obj_bullet1, obj_bullet2, obj_bullet3, obj_bullet4];
 
 global.cHp = 0;

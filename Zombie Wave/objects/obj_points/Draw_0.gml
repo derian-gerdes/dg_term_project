@@ -2,6 +2,7 @@
 var cx = camera_get_view_x(view_camera[0]);
 var cy = camera_get_view_y(view_camera[0]);
 var cw = camera_get_view_width(view_camera[0]);
+var ch = camera_get_view_height(view_camera[0]);
 
 draw_set_font(fnt_points);
 draw_set_colour(c_white);
@@ -61,5 +62,11 @@ else if (instance_exists(obj_zombie1))
 {
 	var num = instance_number(obj_zombie1);
 	draw_text(cx + cw - 300, cy + 65, "Remaining: " + string(num));
+}
+
+//Draw beginning text
+if (!instance_exists(obj_zombie1) && obj_spawner.current_wave == 0) {
+	draw_text(cx + 360, cy + 210, "Move to dark square to begin game");
+	draw_text(cx + 380, cy + 260, "Press U key for the upgrade shop");
 }
 

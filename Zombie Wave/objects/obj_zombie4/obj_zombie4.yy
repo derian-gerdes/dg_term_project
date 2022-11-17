@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_zombie4",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_zombie4",
+    "path": "sprites/spr_zombie4/spr_zombie4.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

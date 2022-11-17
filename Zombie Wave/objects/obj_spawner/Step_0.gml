@@ -20,6 +20,8 @@ if (triggered)
 		if (current_wave == total_waves)
 		{
 			instance_destroy();
+			room_restart();
+			room_goto(Win);
 		}
 		else 
 		{

@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_zombie3",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_zombie2",
+    "path": "sprites/spr_zombie2/spr_zombie2.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -29,9 +32,9 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"atk","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"6",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spd","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"6",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"25",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"atk","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spd","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"8",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"15",},
   ],
   "parent": {
     "name": "Enemy",

@@ -47,4 +47,6 @@ if (instance_exists(obj_zombie4)) {
 
 if (obj_player.hp <= 0) {
 	audio_stop_all();
+} else if (!instance_exists(obj_spawner)) {
+	audio_stop_all();
 }

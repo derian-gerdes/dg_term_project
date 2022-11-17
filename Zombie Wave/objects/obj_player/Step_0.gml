@@ -6,8 +6,6 @@ if (global.change == true) {
 	global.change = false;
 }
 
-
-
 var newMoveSpeed = moveSpeed * (moveSpeed / 2);
 //If player dies, restart game
 if (hp <= 0) 
