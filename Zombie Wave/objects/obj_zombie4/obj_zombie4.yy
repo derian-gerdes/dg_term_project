@@ -32,8 +32,8 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"50",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spd","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"hp","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"80",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"spd","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"8",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"atk","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"objectId":{"name":"obj_enemyPar","path":"objects/obj_enemyPar/obj_enemyPar.yy",},"value":"10",},
   ],
   "parent": {

@@ -21,6 +21,7 @@ if (triggered)
 		{
 			instance_destroy();
 			room_restart();
+			audio_stop_all();
 			room_goto(Win);
 		}
 		else 

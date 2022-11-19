@@ -2,8 +2,8 @@
   "resourceType": "GMOperaGXOptions",
   "resourceVersion": "1.0",
   "name": "operagx",
-  "option_operagx_version": "0.0.0.2",
-  "option_operagx_next_version": "0.0.0.3",
+  "option_operagx_version": "0.0.0.5",
+  "option_operagx_next_version": "0.0.0.6",
   "option_operagx_game_name": "Zombie Wave",
   "option_operagx_interpolate_pixels": true,
   "option_operagx_scale": 0,
@@ -13,6 +13,6 @@
   "option_operagx_team_name": "deriangerdes studio",
   "option_operagx_team_id": "ff9e3f99-401a-42a9-8db3-337c594de3dc",
   "option_operagx_editUrl": "https://create.gx.games/game/2bb56236-cf90-4b3d-bfc8-371cc658eb5b/edit",
-  "option_operagx_internalShareUrl": "",
+  "option_operagx_internalShareUrl": "https://gx.games/games/18xyv4/zombie-wave/tracks/b090353b-2747-4ce0-8976-341bb7d82482/",
   "option_operagx_publicShareUrl": "",
 }
